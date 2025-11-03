@@ -9,5 +9,7 @@ def ping():
     subprocess.check_output(f"ping -c 1 {target}", shell=True)
     return "OK"
 
+# added aa codeql.yml for testing
+
 # FIX: avoid shell, pass a list; validate/whitelist target
 # subprocess.check_output(["ping", "-c", "1", target])
